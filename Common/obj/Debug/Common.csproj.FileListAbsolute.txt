@@ -1,0 +1,6 @@
+C:\Users\quena\source\repos\Yostocks.Api\Common\bin\Debug\Common.dll
+C:\Users\quena\source\repos\Yostocks.Api\Common\bin\Debug\Common.pdb
+C:\Users\quena\source\repos\Yostocks.Api\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\quena\source\repos\Yostocks.Api\Common\obj\Debug\Common.dll
+C:\Users\quena\source\repos\Yostocks.Api\Common\obj\Debug\Common.pdb
+C:\Users\quena\source\repos\Yostocks.Api\Common\obj\Debug\Common.csprojAssemblyReference.cache

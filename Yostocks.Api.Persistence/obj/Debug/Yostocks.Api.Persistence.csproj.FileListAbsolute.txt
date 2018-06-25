@@ -1,0 +1,5 @@
+C:\Users\quena\source\repos\Yostocks.Api\Yostocks.Api.Persistence\bin\Debug\Yostocks.Api.Persistence.dll
+C:\Users\quena\source\repos\Yostocks.Api\Yostocks.Api.Persistence\bin\Debug\Yostocks.Api.Persistence.pdb
+C:\Users\quena\source\repos\Yostocks.Api\Yostocks.Api.Persistence\obj\Debug\Yostocks.Api.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\quena\source\repos\Yostocks.Api\Yostocks.Api.Persistence\obj\Debug\Yostocks.Api.Persistence.dll
+C:\Users\quena\source\repos\Yostocks.Api\Yostocks.Api.Persistence\obj\Debug\Yostocks.Api.Persistence.pdb
