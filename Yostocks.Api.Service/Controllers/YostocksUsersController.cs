@@ -14,17 +14,29 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using Yostocks.Api.Service;
 using Yostocks.Api.Service.Models;
+using Yostocks.Api.Service.Models.Repositories;
 
 namespace yostocksapi.Controllers
 {
     [Authorize]
-    public class YoStocksUsersController : ApiController
+    public class YostocksUsersController : ApiController
     {
 
+
+        private IStockRepository _stockRepository;
+        private IYostocksUserRepository _yostocksUserRepository;
+        private IFragmentRepository _fragmentRepository;
+
+        //CONSTRUCTOR
+        public YostocksUsersController(IStockRepository stockRepository,
+                                       IYostocksUserRepository yostocksUserRepository,
+                                       IFragmentRepository fragmentRepository)
+        {
+            _stockRepository = stockRepository;
+            _yostocksUserRepository = yostocksUserRepository;
+            _fragmentRepository = fragmentRepository;
+        }
         
-        private ApplicationDbContext db = new ApplicationDbContext();
-
-
 
         // GET: api/YoStocksUsers
         public IQueryable<YostocksUser> GetYoStocksUsers()

@@ -266,11 +266,8 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Entities\Fragment.cs" />
-    <Compile Include="Models\Entities\IEntity.cs" />
     <Compile Include="Models\FragmentResponseModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Entities\Stock.cs" />
     <Compile Include="Models\Repositories\FragmentRepository.cs" />
     <Compile Include="Models\Repositories\IFragmentRepository.cs" />
     <Compile Include="Models\Repositories\IStockRepository.cs" />
@@ -279,7 +276,6 @@
     <Compile Include="Models\Repositories\YostocksUserRepository.cs" />
     <Compile Include="Models\StockTransactionsBindingModel.cs" />
     <Compile Include="Models\UserFragmentModel.cs" />
-    <Compile Include="Models\Entities\YostocksUser.cs" />
     <Compile Include="Models\YoustocksUserProfileBindingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -378,18 +374,18 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{fc1d2933-b942-4a94-a9f4-953bd7ae45c0}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Migrations\201806211226288_first.resx">
       <DependentUpon>201806211226288_first.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806221244280_yostock-models.resx">
       <DependentUpon>201806221244280_yostock-models.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Yostocks.Api.Common\Yostocks.Api.Common.csproj">
+      <Project>{4e213b90-27e4-408e-bf5a-9a793d747e43}</Project>
+      <Name>Yostocks.Api.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

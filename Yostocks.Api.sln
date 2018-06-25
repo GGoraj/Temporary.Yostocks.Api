@@ -5,7 +5,13 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yostocks.Api.Service", "Yostocks.Api.Service\Yostocks.Api.Service.csproj", "{4575BA8F-2791-4FD3-B59A-E065865ABD2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{FC1D2933-B942-4A94-A9F4-953BD7AE45C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yostocks.Api.Persistence", "Yostocks.Api.Persistence\Yostocks.Api.Persistence.csproj", "{46D5438C-5B82-45B1-B287-6E962D711B55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yostocks.Api.Domain", "Yostocks.Api.Domain\Yostocks.Api.Domain.csproj", "{5D9AA2A0-E877-45AF-8B8C-457FFA31F769}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yostocks.Api.Application", "Yostocks.Api.Application\Yostocks.Api.Application.csproj", "{E4F520BF-47BB-4883-B54F-56A0AB28C37B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yostocks.Api.Common", "Yostocks.Api.Common\Yostocks.Api.Common.csproj", "{4E213B90-27E4-408E-BF5A-9A793D747E43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +23,22 @@ Global
 		{4575BA8F-2791-4FD3-B59A-E065865ABD2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4575BA8F-2791-4FD3-B59A-E065865ABD2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4575BA8F-2791-4FD3-B59A-E065865ABD2D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FC1D2933-B942-4A94-A9F4-953BD7AE45C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC1D2933-B942-4A94-A9F4-953BD7AE45C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC1D2933-B942-4A94-A9F4-953BD7AE45C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC1D2933-B942-4A94-A9F4-953BD7AE45C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D5438C-5B82-45B1-B287-6E962D711B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D5438C-5B82-45B1-B287-6E962D711B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D5438C-5B82-45B1-B287-6E962D711B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D5438C-5B82-45B1-B287-6E962D711B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D9AA2A0-E877-45AF-8B8C-457FFA31F769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D9AA2A0-E877-45AF-8B8C-457FFA31F769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D9AA2A0-E877-45AF-8B8C-457FFA31F769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D9AA2A0-E877-45AF-8B8C-457FFA31F769}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4F520BF-47BB-4883-B54F-56A0AB28C37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4F520BF-47BB-4883-B54F-56A0AB28C37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4F520BF-47BB-4883-B54F-56A0AB28C37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4F520BF-47BB-4883-B54F-56A0AB28C37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E213B90-27E4-408E-BF5A-9A793D747E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E213B90-27E4-408E-BF5A-9A793D747E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E213B90-27E4-408E-BF5A-9A793D747E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E213B90-27E4-408E-BF5A-9A793D747E43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

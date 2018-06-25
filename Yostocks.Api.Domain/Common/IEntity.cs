@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Yostocks.Api.Common
+namespace Yostocks.Api.Domain.Common
 {
-    public class Class1
+    public interface IEntity
     {
+       int Id { get; set; }
     }
 }

@@ -1,6 +1,13 @@
-﻿using Yostocks.Api.Service.Models.Entities;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Yostocks.Api.Domain.Common;
+using Yostocks.Api.Domain.Stocks;
+using Yostocks.Api.Domain.YostocksUsers;
 
-namespace Yostocks.Api.Service.Models
+namespace Yostocks.Api.Domain.Fragments
 {
     public class Fragment : IEntity
     {

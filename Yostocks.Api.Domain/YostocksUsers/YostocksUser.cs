@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Runtime.Serialization;
-using System.Web;
-using Yostocks.Api.Service.Models.Entities;
+using System.Text;
+using System.Threading.Tasks;
+using Yostocks.Api.Domain.Common;
+using Yostocks.Api.Domain.Fragments;
 
-namespace Yostocks.Api.Service.Models
+namespace Yostocks.Api.Domain.YostocksUsers
 {
     public class YostocksUser : IEntity
     {
@@ -29,7 +30,7 @@ namespace Yostocks.Api.Service.Models
         //public string StockFragmentId { get; set; }
 
         //Navigation Properties
-        [DataMember]
+        //[DataMember]
         public virtual ICollection<Fragment> Fragments { get; set; }
     }
 }
