@@ -49,7 +49,7 @@
   <ItemGroup>
     <Compile Include="Fragments\FragmentRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stocks\StockRepository.cs" />
+    <Compile Include="CompanyStocks\CompanyStockRepository.cs" />
     <Compile Include="YostocksDbContext.cs" />
     <Compile Include="YostocksUsers\YostocksUserRepository.cs" />
   </ItemGroup>
@@ -61,6 +61,10 @@
     <ProjectReference Include="..\Yostocks.Api.Domain\Yostocks.Api.Domain.csproj">
       <Project>{5d9aa2a0-e877-45af-8b8c-457ffa31f769}</Project>
       <Name>Yostocks.Api.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Yostocks.Api.Infrastructure\Yostocks.Api.Infrastructure.csproj">
+      <Project>{90e7f98f-03c8-4262-a913-195b32d3f843}</Project>
+      <Name>Yostocks.Api.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

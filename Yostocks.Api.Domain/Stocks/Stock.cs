@@ -40,3 +40,4 @@ namespace Yostocks.Api.Domain.Stocks
             get; set;
         }
     }
+}

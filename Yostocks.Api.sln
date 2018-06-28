@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yostocks.Api.Application", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yostocks.Api.Common", "Yostocks.Api.Common\Yostocks.Api.Common.csproj", "{4E213B90-27E4-408E-BF5A-9A793D747E43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yostocks.Api.Infrastructure", "Yostocks.Api.Infrastructure\Yostocks.Api.Infrastructure.csproj", "{90E7F98F-03C8-4262-A913-195B32D3F843}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4E213B90-27E4-408E-BF5A-9A793D747E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E213B90-27E4-408E-BF5A-9A793D747E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E213B90-27E4-408E-BF5A-9A793D747E43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90E7F98F-03C8-4262-A913-195B32D3F843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90E7F98F-03C8-4262-A913-195B32D3F843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90E7F98F-03C8-4262-A913-195B32D3F843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90E7F98F-03C8-4262-A913-195B32D3F843}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

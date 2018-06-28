@@ -54,12 +54,17 @@
     <Compile Include="Fragments\Fragment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stocks\Stock.cs" />
-    <Compile Include="YostocksUsers\YostocksUser.cs" />
-    <Compile Include="YostocksUsers\YoustocksUserProfileBindingModel.cs" />
+    <Compile Include="YostocksUser\YostocksUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Yostocks.Api.Infrastructure\Yostocks.Api.Infrastructure.csproj">
+      <Project>{90e7f98f-03c8-4262-a913-195b32d3f843}</Project>
+      <Name>Yostocks.Api.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

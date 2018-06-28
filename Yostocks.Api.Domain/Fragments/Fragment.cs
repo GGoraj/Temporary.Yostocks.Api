@@ -19,7 +19,7 @@ namespace Yostocks.Api.Domain.Fragments
         //table definitions - https://msdn.microsoft.com/en-us/library/zed0k41d.aspx
 
         //navigation property
-        public virtual Stock Stock { get; set; }
+        public virtual Stock CompanyStock { get; set; }
         public virtual YostocksUser YostocksUser { get; set; }
     }
 }

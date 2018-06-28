@@ -2,6 +2,7 @@ using System;
 using System.Web.Http;
 using Unity;
 using Unity.AspNet.WebApi;
+using Yostocks.Api.Application.Interfaces;
 using Yostocks.Api.Service.Models.Repositories;
 
 namespace Yostocks.Api.Service
@@ -45,7 +46,7 @@ namespace Yostocks.Api.Service
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
 
-            container.RegisterSingleton<IStockRepository, StockRepository>();
+            container.RegisterSingleton<IStockRepository, CompanyStockRepository>();
             container.RegisterSingleton<IFragmentRepository, FragmentRepository>();
             container.RegisterSingleton<IYostocksUserRepository, YostocksUserRepository>();
 

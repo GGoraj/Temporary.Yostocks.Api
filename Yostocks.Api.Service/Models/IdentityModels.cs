@@ -4,6 +4,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
+using Yostocks.Api.Domain.Fragments;
+using Yostocks.Api.Domain.Stocks;
+using Yostocks.Api.Domain.YostocksUsers;
 
 namespace Yostocks.Api.Service.Models
 {
@@ -33,7 +36,7 @@ namespace Yostocks.Api.Service.Models
         }
 
         public DbSet<YostocksUser> YostocksUsers { get; set; }
-        public DbSet<Stock> Stocks { get; set; }
+        public DbSet<Domain.Stocks.Stock> Stocks { get; set; }
         public DbSet<Fragment> Fragments { get; set; }
     }
 }

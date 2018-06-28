@@ -28,9 +28,15 @@ namespace Yostocks.Api.Service.Models.Repositories
             _db.SaveChanges();
         }
 
-        public List<Fragment> GetUserRelatedFragments(string email)
+        public List<Fragment> GetUserFragmentsByEmail(string email)
         {
             throw new NotImplementedException();
         }
+
+        public ICollection<Fragment> GetUserFragmentsByUserId(int id)
+        {
+            throw new NotImplementedException();
+        }
+        
     }
 }

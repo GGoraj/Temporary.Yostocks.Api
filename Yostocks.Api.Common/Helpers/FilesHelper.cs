@@ -11,9 +11,9 @@ namespace Common.Helpers
         {
             try
             {
-                memoryStream.Position = 0;
-                var path = Path.Combine(HttpContext.Current.Server.MapPath(folderName), fileName);
-                File.WriteAllBytes(path, memoryStream.ToArray());
+              //  memoryStream.Position = 0;
+              //  var path = Path.Combine(HttpContext.Current.Server.MapPath(folderName), fileName);
+              //  File.WriteAllBytes(path, memoryStream.ToArray());
             }
             catch
             {

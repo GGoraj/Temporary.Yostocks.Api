@@ -5,16 +5,17 @@ namespace Yostocks.Api.Service.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using Yostocks.Api.Domain.Stocks;
     using Yostocks.Api.Service.Models;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Yostocks.Api.Service.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(Yostocks.Api.Service.Models.ApplicationDbContext context)
+        protected override void Seed(ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 
@@ -29,8 +30,8 @@ namespace Yostocks.Api.Service.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
 
-            
-             
+
+
             var stockList = new List<Stock>();
             DateTime CurrentDateTime = Convert.ToDateTime(DateTime.Now);
             string CurrentDate = CurrentDateTime.ToLongDateString();
@@ -64,7 +65,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Audi",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/audi.png"
@@ -76,7 +77,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Bing",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/bing.png"
@@ -88,7 +89,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "BMW",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/bmw.png"
@@ -100,7 +101,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Coca Cola",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/cocacola.png"
@@ -112,7 +113,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Disney",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/disney.png"
@@ -123,7 +124,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Ea Sports",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/easports.png"
@@ -135,7 +136,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Facebook",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-               
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/facebook.png"
@@ -147,7 +148,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Ford",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/ford.png"
@@ -159,7 +160,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Google",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/google.png"
@@ -171,7 +172,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "H & M",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-               
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/hm.png"
@@ -183,7 +184,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "IBM",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/ibm.png"
@@ -195,7 +196,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Lockheed",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-               
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/lockheed.png"
@@ -207,7 +208,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "MC Donalds",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-               
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/mcdonalds.png"
@@ -219,7 +220,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Microsoft",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-               
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/microsoft.png"
@@ -231,7 +232,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Netflix",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-               
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/netflix.png"
@@ -243,7 +244,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Nike",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/nike.png"
@@ -255,7 +256,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "IBM",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/nintendo.png"
@@ -267,7 +268,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Northrop Grummanm",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/northropgrummanm.png"
@@ -279,7 +280,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Samsung",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/samsung.png"
@@ -291,7 +292,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Starbucks Coffe",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/starbuckscoffe.png"
@@ -303,7 +304,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Tesla",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/tesla.png"
@@ -315,7 +316,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Victoria's Secret",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/victoriassecret.png"
@@ -327,7 +328,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Visa",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/visa.png"
@@ -339,7 +340,7 @@ namespace Yostocks.Api.Service.Migrations
                 Brand = "Walmart",
                 RemainingPercentage = 100.0,
                 PriceWhenPurchased = 6003.21,
-                
+
                 DateGenerated = CurrentDate,
                 TimeGenerated = CurrentTime,
                 LogoImagePath = "~/Content/Brands-Logo/walmart.png"
@@ -360,15 +361,15 @@ namespace Yostocks.Api.Service.Migrations
 
 
             //Adding all Stocks to the DB table
-            
+
             foreach (var item in stockList)
             {
                 context.Stocks.Add(item);
             }
             context.SaveChanges();
 
-            
+
         }
-    
+
     }
 }

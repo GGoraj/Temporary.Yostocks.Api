@@ -52,7 +52,7 @@
   <ItemGroup>
     <Compile Include="Interfaces\IDatabaseService.cs" />
     <Compile Include="Interfaces\IFragmentRepository.cs" />
-    <Compile Include="Interfaces\IStockRepository.cs" />
+    <Compile Include="Interfaces\ICompanyStockRepository.cs" />
     <Compile Include="Interfaces\IYostocksUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,12 +61,17 @@
     <Folder Include="Fragments\Queries\" />
     <Folder Include="Stocks\Commands\" />
     <Folder Include="Stocks\Queries\" />
-    <Folder Include="YostocksUsers\" />
+    <Folder Include="YostocksUsers\Commands\" />
+    <Folder Include="YostocksUsers\Queries\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Yostocks.Api.Domain\Yostocks.Api.Domain.csproj">
       <Project>{5D9AA2A0-E877-45AF-8B8C-457FFA31F769}</Project>
       <Name>Yostocks.Api.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Yostocks.Api.Infrastructure\Yostocks.Api.Infrastructure.csproj">
+      <Project>{90e7f98f-03c8-4262-a913-195b32d3f843}</Project>
+      <Name>Yostocks.Api.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
